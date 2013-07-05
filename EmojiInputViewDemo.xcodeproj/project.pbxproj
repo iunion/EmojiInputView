@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		046F2D90178688CF00ADC312 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046F2D8F178688CF00ADC312 /* UIKit.framework */; };
+		046F2D92178688CF00ADC312 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046F2D91178688CF00ADC312 /* Foundation.framework */; };
+		046F2D94178688CF00ADC312 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046F2D93178688CF00ADC312 /* CoreGraphics.framework */; };
+		046F2D9A178688CF00ADC312 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 046F2D98178688CF00ADC312 /* InfoPlist.strings */; };
+		046F2D9C178688CF00ADC312 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F2D9B178688CF00ADC312 /* main.m */; };
+		046F2DA0178688CF00ADC312 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F2D9F178688CF00ADC312 /* AppDelegate.m */; };
+		046F2DA2178688CF00ADC312 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DA1178688CF00ADC312 /* Default.png */; };
+		046F2DA4178688CF00ADC312 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DA3178688CF00ADC312 /* Default@2x.png */; };
+		046F2DA6178688CF00ADC312 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DA5178688CF00ADC312 /* Default-568h@2x.png */; };
+		046F2DA9178688CF00ADC312 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F2DA8178688CF00ADC312 /* ViewController.m */; };
+		046F2DAC178688CF00ADC312 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DAA178688CF00ADC312 /* ViewController.xib */; };
+		046F2DCE1786895F00ADC312 /* EmojiImagePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F2DB41786895E00ADC312 /* EmojiImagePageView.m */; };
+		046F2DCF1786895F00ADC312 /* EmojiInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F2DB61786895E00ADC312 /* EmojiInputView.m */; };
+		046F2DD01786895F00ADC312 /* EmojisList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DB71786895E00ADC312 /* EmojisList.plist */; };
+		046F2DD11786895F00ADC312 /* emoji_btn_hbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DB91786895E00ADC312 /* emoji_btn_hbg@2x.png */; };
+		046F2DD21786895F00ADC312 /* emoji_keybord_bell_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DBA1786895E00ADC312 /* emoji_keybord_bell_icon@2x.png */; };
+		046F2DD31786895F00ADC312 /* emoji_keybord_bell_sicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DBB1786895E00ADC312 /* emoji_keybord_bell_sicon@2x.png */; };
+		046F2DD41786895F00ADC312 /* emoji_keybord_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DBC1786895E00ADC312 /* emoji_keybord_bg@2x.png */; };
+		046F2DD51786895F00ADC312 /* emoji_keybord_bottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DBD1786895E00ADC312 /* emoji_keybord_bottom@2x.png */; };
+		046F2DD61786895F00ADC312 /* emoji_keybord_car_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DBE1786895E00ADC312 /* emoji_keybord_car_icon@2x.png */; };
+		046F2DD71786895F00ADC312 /* emoji_keybord_car_sicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DBF1786895E00ADC312 /* emoji_keybord_car_sicon@2x.png */; };
+		046F2DD81786895F00ADC312 /* emoji_keybord_characters_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DC01786895E00ADC312 /* emoji_keybord_characters_icon@2x.png */; };
+		046F2DD91786895F00ADC312 /* emoji_keybord_characters_sicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DC11786895E00ADC312 /* emoji_keybord_characters_sicon@2x.png */; };
+		046F2DDA1786895F00ADC312 /* emoji_keybord_delete_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DC21786895E00ADC312 /* emoji_keybord_delete_icon@2x.png */; };
+		046F2DDB1786895F00ADC312 /* emoji_keybord_delete_sicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DC31786895E00ADC312 /* emoji_keybord_delete_sicon@2x.png */; };
+		046F2DDC1786895F00ADC312 /* emoji_keybord_face_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DC41786895E00ADC312 /* emoji_keybord_face_icon@2x.png */; };
+		046F2DDD1786895F00ADC312 /* emoji_keybord_face_sicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DC51786895E00ADC312 /* emoji_keybord_face_sicon@2x.png */; };
+		046F2DDE1786895F00ADC312 /* emoji_keybord_flower_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DC61786895E00ADC312 /* emoji_keybord_flower_icon@2x.png */; };
+		046F2DDF1786895F00ADC312 /* emoji_keybord_flower_sicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DC71786895E00ADC312 /* emoji_keybord_flower_sicon@2x.png */; };
+		046F2DE01786895F00ADC312 /* emoji_keybord_icon_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DC81786895E00ADC312 /* emoji_keybord_icon_bg@2x.png */; };
+		046F2DE11786895F00ADC312 /* emoji_keybord_icon_sbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DC91786895E00ADC312 /* emoji_keybord_icon_sbg@2x.png */; };
+		046F2DE21786895F00ADC312 /* emoji_keybord_switch_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DCA1786895E00ADC312 /* emoji_keybord_switch_icon@2x.png */; };
+		046F2DE31786895F00ADC312 /* emoji_keybord_switch_sicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DCB1786895E00ADC312 /* emoji_keybord_switch_sicon@2x.png */; };
+		046F2DE41786895F00ADC312 /* emoji_page_dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DCC1786895E00ADC312 /* emoji_page_dot.png */; };
+		046F2DE51786895F00ADC312 /* emoji_page_dot_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DCD1786895E00ADC312 /* emoji_page_dot_active.png */; };
+		046F2DEC17868A9600ADC312 /* HMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F2DE817868A9600ADC312 /* HMPageControl.m */; };
+		046F2DED17868A9600ADC312 /* black_page_control.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DEA17868A9600ADC312 /* black_page_control.png */; };
+		046F2DEE17868A9600ADC312 /* black_page_control_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 046F2DEB17868A9600ADC312 /* black_page_control_active.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		046F2D8B178688CF00ADC312 /* EmojiInputViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiInputViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		046F2D8F178688CF00ADC312 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		046F2D91178688CF00ADC312 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		046F2D93178688CF00ADC312 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		046F2D97178688CF00ADC312 /* EmojiInputViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EmojiInputViewDemo-Info.plist"; sourceTree = "<group>"; };
+		046F2D99178688CF00ADC312 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		046F2D9B178688CF00ADC312 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		046F2D9D178688CF00ADC312 /* EmojiInputViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmojiInputViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		046F2D9E178688CF00ADC312 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		046F2D9F178688CF00ADC312 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		046F2DA1178688CF00ADC312 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		046F2DA3178688CF00ADC312 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		046F2DA5178688CF00ADC312 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		046F2DA7178688CF00ADC312 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		046F2DA8178688CF00ADC312 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		046F2DAB178688CF00ADC312 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		046F2DB31786895E00ADC312 /* EmojiImagePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiImagePageView.h; sourceTree = "<group>"; };
+		046F2DB41786895E00ADC312 /* EmojiImagePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiImagePageView.m; sourceTree = "<group>"; };
+		046F2DB51786895E00ADC312 /* EmojiInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiInputView.h; sourceTree = "<group>"; };
+		046F2DB61786895E00ADC312 /* EmojiInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiInputView.m; sourceTree = "<group>"; };
+		046F2DB71786895E00ADC312 /* EmojisList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EmojisList.plist; sourceTree = "<group>"; };
+		046F2DB91786895E00ADC312 /* emoji_btn_hbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_btn_hbg@2x.png"; sourceTree = "<group>"; };
+		046F2DBA1786895E00ADC312 /* emoji_keybord_bell_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_bell_icon@2x.png"; sourceTree = "<group>"; };
+		046F2DBB1786895E00ADC312 /* emoji_keybord_bell_sicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_bell_sicon@2x.png"; sourceTree = "<group>"; };
+		046F2DBC1786895E00ADC312 /* emoji_keybord_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_bg@2x.png"; sourceTree = "<group>"; };
+		046F2DBD1786895E00ADC312 /* emoji_keybord_bottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_bottom@2x.png"; sourceTree = "<group>"; };
+		046F2DBE1786895E00ADC312 /* emoji_keybord_car_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_car_icon@2x.png"; sourceTree = "<group>"; };
+		046F2DBF1786895E00ADC312 /* emoji_keybord_car_sicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_car_sicon@2x.png"; sourceTree = "<group>"; };
+		046F2DC01786895E00ADC312 /* emoji_keybord_characters_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_characters_icon@2x.png"; sourceTree = "<group>"; };
+		046F2DC11786895E00ADC312 /* emoji_keybord_characters_sicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_characters_sicon@2x.png"; sourceTree = "<group>"; };
+		046F2DC21786895E00ADC312 /* emoji_keybord_delete_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_delete_icon@2x.png"; sourceTree = "<group>"; };
+		046F2DC31786895E00ADC312 /* emoji_keybord_delete_sicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_delete_sicon@2x.png"; sourceTree = "<group>"; };
+		046F2DC41786895E00ADC312 /* emoji_keybord_face_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_face_icon@2x.png"; sourceTree = "<group>"; };
+		046F2DC51786895E00ADC312 /* emoji_keybord_face_sicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_face_sicon@2x.png"; sourceTree = "<group>"; };
+		046F2DC61786895E00ADC312 /* emoji_keybord_flower_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_flower_icon@2x.png"; sourceTree = "<group>"; };
+		046F2DC71786895E00ADC312 /* emoji_keybord_flower_sicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_flower_sicon@2x.png"; sourceTree = "<group>"; };
+		046F2DC81786895E00ADC312 /* emoji_keybord_icon_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_icon_bg@2x.png"; sourceTree = "<group>"; };
+		046F2DC91786895E00ADC312 /* emoji_keybord_icon_sbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_icon_sbg@2x.png"; sourceTree = "<group>"; };
+		046F2DCA1786895E00ADC312 /* emoji_keybord_switch_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_switch_icon@2x.png"; sourceTree = "<group>"; };
+		046F2DCB1786895E00ADC312 /* emoji_keybord_switch_sicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_keybord_switch_sicon@2x.png"; sourceTree = "<group>"; };
+		046F2DCC1786895E00ADC312 /* emoji_page_dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emoji_page_dot.png; sourceTree = "<group>"; };
+		046F2DCD1786895E00ADC312 /* emoji_page_dot_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emoji_page_dot_active.png; sourceTree = "<group>"; };
+		046F2DE717868A9600ADC312 /* HMPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPageControl.h; sourceTree = "<group>"; };
+		046F2DE817868A9600ADC312 /* HMPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPageControl.m; sourceTree = "<group>"; };
+		046F2DEA17868A9600ADC312 /* black_page_control.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_page_control.png; sourceTree = "<group>"; };
+		046F2DEB17868A9600ADC312 /* black_page_control_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_page_control_active.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		046F2D88178688CF00ADC312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046F2D90178688CF00ADC312 /* UIKit.framework in Frameworks */,
+				046F2D92178688CF00ADC312 /* Foundation.framework in Frameworks */,
+				046F2D94178688CF00ADC312 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		046F2D80178688CF00ADC312 = {
+			isa = PBXGroup;
+			children = (
+				046F2DE617868A9600ADC312 /* HMPageControl */,
+				046F2DB21786895E00ADC312 /* EmojiInputView */,
+				046F2D95178688CF00ADC312 /* EmojiInputViewDemo */,
+				046F2D8E178688CF00ADC312 /* Frameworks */,
+				046F2D8C178688CF00ADC312 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		046F2D8C178688CF00ADC312 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				046F2D8B178688CF00ADC312 /* EmojiInputViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		046F2D8E178688CF00ADC312 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				046F2D8F178688CF00ADC312 /* UIKit.framework */,
+				046F2D91178688CF00ADC312 /* Foundation.framework */,
+				046F2D93178688CF00ADC312 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		046F2D95178688CF00ADC312 /* EmojiInputViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				046F2D9E178688CF00ADC312 /* AppDelegate.h */,
+				046F2D9F178688CF00ADC312 /* AppDelegate.m */,
+				046F2DA7178688CF00ADC312 /* ViewController.h */,
+				046F2DA8178688CF00ADC312 /* ViewController.m */,
+				046F2DAA178688CF00ADC312 /* ViewController.xib */,
+				046F2D96178688CF00ADC312 /* Supporting Files */,
+			);
+			path = EmojiInputViewDemo;
+			sourceTree = "<group>";
+		};
+		046F2D96178688CF00ADC312 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				046F2D97178688CF00ADC312 /* EmojiInputViewDemo-Info.plist */,
+				046F2D98178688CF00ADC312 /* InfoPlist.strings */,
+				046F2D9B178688CF00ADC312 /* main.m */,
+				046F2D9D178688CF00ADC312 /* EmojiInputViewDemo-Prefix.pch */,
+				046F2DA1178688CF00ADC312 /* Default.png */,
+				046F2DA3178688CF00ADC312 /* Default@2x.png */,
+				046F2DA5178688CF00ADC312 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		046F2DB21786895E00ADC312 /* EmojiInputView */ = {
+			isa = PBXGroup;
+			children = (
+				046F2DB31786895E00ADC312 /* EmojiImagePageView.h */,
+				046F2DB41786895E00ADC312 /* EmojiImagePageView.m */,
+				046F2DB51786895E00ADC312 /* EmojiInputView.h */,
+				046F2DB61786895E00ADC312 /* EmojiInputView.m */,
+				046F2DB71786895E00ADC312 /* EmojisList.plist */,
+				046F2DB81786895E00ADC312 /* Image */,
+			);
+			path = EmojiInputView;
+			sourceTree = "<group>";
+		};
+		046F2DB81786895E00ADC312 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				046F2DB91786895E00ADC312 /* emoji_btn_hbg@2x.png */,
+				046F2DBA1786895E00ADC312 /* emoji_keybord_bell_icon@2x.png */,
+				046F2DBB1786895E00ADC312 /* emoji_keybord_bell_sicon@2x.png */,
+				046F2DBC1786895E00ADC312 /* emoji_keybord_bg@2x.png */,
+				046F2DBD1786895E00ADC312 /* emoji_keybord_bottom@2x.png */,
+				046F2DBE1786895E00ADC312 /* emoji_keybord_car_icon@2x.png */,
+				046F2DBF1786895E00ADC312 /* emoji_keybord_car_sicon@2x.png */,
+				046F2DC01786895E00ADC312 /* emoji_keybord_characters_icon@2x.png */,
+				046F2DC11786895E00ADC312 /* emoji_keybord_characters_sicon@2x.png */,
+				046F2DC21786895E00ADC312 /* emoji_keybord_delete_icon@2x.png */,
+				046F2DC31786895E00ADC312 /* emoji_keybord_delete_sicon@2x.png */,
+				046F2DC41786895E00ADC312 /* emoji_keybord_face_icon@2x.png */,
+				046F2DC51786895E00ADC312 /* emoji_keybord_face_sicon@2x.png */,
+				046F2DC61786895E00ADC312 /* emoji_keybord_flower_icon@2x.png */,
+				046F2DC71786895E00ADC312 /* emoji_keybord_flower_sicon@2x.png */,
+				046F2DC81786895E00ADC312 /* emoji_keybord_icon_bg@2x.png */,
+				046F2DC91786895E00ADC312 /* emoji_keybord_icon_sbg@2x.png */,
+				046F2DCA1786895E00ADC312 /* emoji_keybord_switch_icon@2x.png */,
+				046F2DCB1786895E00ADC312 /* emoji_keybord_switch_sicon@2x.png */,
+				046F2DCC1786895E00ADC312 /* emoji_page_dot.png */,
+				046F2DCD1786895E00ADC312 /* emoji_page_dot_active.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		046F2DE617868A9600ADC312 /* HMPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				046F2DE717868A9600ADC312 /* HMPageControl.h */,
+				046F2DE817868A9600ADC312 /* HMPageControl.m */,
+				046F2DE917868A9600ADC312 /* Image */,
+			);
+			path = HMPageControl;
+			sourceTree = "<group>";
+		};
+		046F2DE917868A9600ADC312 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				046F2DEA17868A9600ADC312 /* black_page_control.png */,
+				046F2DEB17868A9600ADC312 /* black_page_control_active.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		046F2D8A178688CF00ADC312 /* EmojiInputViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046F2DAF178688CF00ADC312 /* Build configuration list for PBXNativeTarget "EmojiInputViewDemo" */;
+			buildPhases = (
+				046F2D87178688CF00ADC312 /* Sources */,
+				046F2D88178688CF00ADC312 /* Frameworks */,
+				046F2D89178688CF00ADC312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmojiInputViewDemo;
+			productName = EmojiInputViewDemo;
+			productReference = 046F2D8B178688CF00ADC312 /* EmojiInputViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		046F2D82178688CF00ADC312 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = DJ;
+			};
+			buildConfigurationList = 046F2D85178688CF00ADC312 /* Build configuration list for PBXProject "EmojiInputViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 046F2D80178688CF00ADC312;
+			productRefGroup = 046F2D8C178688CF00ADC312 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				046F2D8A178688CF00ADC312 /* EmojiInputViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		046F2D89178688CF00ADC312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046F2D9A178688CF00ADC312 /* InfoPlist.strings in Resources */,
+				046F2DA2178688CF00ADC312 /* Default.png in Resources */,
+				046F2DA4178688CF00ADC312 /* Default@2x.png in Resources */,
+				046F2DA6178688CF00ADC312 /* Default-568h@2x.png in Resources */,
+				046F2DAC178688CF00ADC312 /* ViewController.xib in Resources */,
+				046F2DD01786895F00ADC312 /* EmojisList.plist in Resources */,
+				046F2DD11786895F00ADC312 /* emoji_btn_hbg@2x.png in Resources */,
+				046F2DD21786895F00ADC312 /* emoji_keybord_bell_icon@2x.png in Resources */,
+				046F2DD31786895F00ADC312 /* emoji_keybord_bell_sicon@2x.png in Resources */,
+				046F2DD41786895F00ADC312 /* emoji_keybord_bg@2x.png in Resources */,
+				046F2DD51786895F00ADC312 /* emoji_keybord_bottom@2x.png in Resources */,
+				046F2DD61786895F00ADC312 /* emoji_keybord_car_icon@2x.png in Resources */,
+				046F2DD71786895F00ADC312 /* emoji_keybord_car_sicon@2x.png in Resources */,
+				046F2DD81786895F00ADC312 /* emoji_keybord_characters_icon@2x.png in Resources */,
+				046F2DD91786895F00ADC312 /* emoji_keybord_characters_sicon@2x.png in Resources */,
+				046F2DDA1786895F00ADC312 /* emoji_keybord_delete_icon@2x.png in Resources */,
+				046F2DDB1786895F00ADC312 /* emoji_keybord_delete_sicon@2x.png in Resources */,
+				046F2DDC1786895F00ADC312 /* emoji_keybord_face_icon@2x.png in Resources */,
+				046F2DDD1786895F00ADC312 /* emoji_keybord_face_sicon@2x.png in Resources */,
+				046F2DDE1786895F00ADC312 /* emoji_keybord_flower_icon@2x.png in Resources */,
+				046F2DDF1786895F00ADC312 /* emoji_keybord_flower_sicon@2x.png in Resources */,
+				046F2DE01786895F00ADC312 /* emoji_keybord_icon_bg@2x.png in Resources */,
+				046F2DE11786895F00ADC312 /* emoji_keybord_icon_sbg@2x.png in Resources */,
+				046F2DE21786895F00ADC312 /* emoji_keybord_switch_icon@2x.png in Resources */,
+				046F2DE31786895F00ADC312 /* emoji_keybord_switch_sicon@2x.png in Resources */,
+				046F2DE41786895F00ADC312 /* emoji_page_dot.png in Resources */,
+				046F2DE51786895F00ADC312 /* emoji_page_dot_active.png in Resources */,
+				046F2DED17868A9600ADC312 /* black_page_control.png in Resources */,
+				046F2DEE17868A9600ADC312 /* black_page_control_active.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		046F2D87178688CF00ADC312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046F2D9C178688CF00ADC312 /* main.m in Sources */,
+				046F2DA0178688CF00ADC312 /* AppDelegate.m in Sources */,
+				046F2DA9178688CF00ADC312 /* ViewController.m in Sources */,
+				046F2DCE1786895F00ADC312 /* EmojiImagePageView.m in Sources */,
+				046F2DCF1786895F00ADC312 /* EmojiInputView.m in Sources */,
+				046F2DEC17868A9600ADC312 /* HMPageControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		046F2D98178688CF00ADC312 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				046F2D99178688CF00ADC312 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		046F2DAA178688CF00ADC312 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				046F2DAB178688CF00ADC312 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		046F2DAD178688CF00ADC312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		046F2DAE178688CF00ADC312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		046F2DB0178688CF00ADC312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EmojiInputViewDemo/EmojiInputViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "EmojiInputViewDemo/EmojiInputViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		046F2DB1178688CF00ADC312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EmojiInputViewDemo/EmojiInputViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "EmojiInputViewDemo/EmojiInputViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		046F2D85178688CF00ADC312 /* Build configuration list for PBXProject "EmojiInputViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046F2DAD178688CF00ADC312 /* Debug */,
+				046F2DAE178688CF00ADC312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046F2DAF178688CF00ADC312 /* Build configuration list for PBXNativeTarget "EmojiInputViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046F2DB0178688CF00ADC312 /* Debug */,
+				046F2DB1178688CF00ADC312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 046F2D82178688CF00ADC312 /* Project object */;
+}
