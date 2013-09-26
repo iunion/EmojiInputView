@@ -50,16 +50,28 @@
 
 - (void)updateDots
 {
-    // 更新显示所有的点按钮
-    if (imagePageStateNormal && imagePageStateHighlighted)
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0)
     {
-        // 获取所有子视图
-        NSArray *subview = self.subviews;
-        for (NSInteger i = 0; i < [subview count]; i++)
+        return;
+    }
+    else
+    {
+        // 更新显示所有的点按钮
+        if (imagePageStateNormal && imagePageStateHighlighted)
         {
-            UIImageView *dot = [subview objectAtIndex:i];
-            //NSLog(@"%d", self.currentPage);
-            dot.image = self.currentPage == i ? imagePageStateHighlighted : imagePageStateNormal;
+            // 获取所有子视图
+            NSArray *subview = self.subviews;
+            for (NSInteger i = 0; i < [subview count]; i++)
+            {
+                UIView *view = [subview objectAtIndex:i];
+                
+                if ([view isKindOfClass:[UIImageView class]])
+                {
+                    UIImageView *dot = (UIImageView *)view;
+                    //NSLog(@"%d", self.currentPage);
+                    dot.image = self.currentPage == i ? imagePageStateHighlighted : imagePageStateNormal;
+                }
+            }
         }
     }
 }

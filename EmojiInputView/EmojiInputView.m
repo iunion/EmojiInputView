@@ -9,16 +9,16 @@
 #import "EmojiInputView.h"
 
 // 人物
-#define Emoji_People_kry    @"People"
-#define Emoji_People5_kry    @"People_5"
+#define Emoji_People_key    @"People"
+#define Emoji_People5_key    @"People_5"
 // 物品
-#define Emoji_Objects_kry   @"Objects"
+#define Emoji_Objects_key   @"Objects"
 // 自然
-#define Emoji_Nature_kry    @"Nature"
+#define Emoji_Nature_key    @"Nature"
 // 地点
-#define Emoji_Places_kry    @"Places"
+#define Emoji_Places_key    @"Places"
 // 符号
-#define Emoji_Symbols_kry   @"Symbols"
+#define Emoji_Symbols_key   @"Symbols"
 
 @interface EmojiInputView ()
 - (void)changeEmojiCategory:(UIButton *)btn;
@@ -132,8 +132,18 @@
         //[s_ScrollView release];
         
         s_PageControl = [[HMPageControl alloc] init];
-        s_PageControl.imagePageStateNormal = [UIImage imageNamed:@"emoji_page_dot"];
-        s_PageControl.imagePageStateHighlighted = [UIImage imageNamed:@"emoji_page_dot_active"];
+        
+        if (IOS_VERSION >= 6.0)
+        {
+            s_PageControl.pageIndicatorTintColor = [UIColor colorWithRed:0.67 green:0.67 blue:0.67 alpha:1.0];
+            s_PageControl.currentPageIndicatorTintColor = [UIColor colorWithRed:0.4 green:0.4 blue:0.4 alpha:1.0];
+        }
+        else
+        {
+            s_PageControl.imagePageStateNormal = [UIImage imageNamed:@"emoji_page_dot"];
+            s_PageControl.imagePageStateHighlighted = [UIImage imageNamed:@"emoji_page_dot_active"];
+        }
+        
         s_PageControl.frame = CGRectMake(0, EMOJI_VIEW_HEIGHT, UI_SCREEN_WIDTH, 10);
         [s_PageControl addTarget:self action:@selector(clickpagecontrol:) forControlEvents:UIControlEventValueChanged];
         
@@ -199,11 +209,11 @@
     
     if (IOS_VERSION >= 6.0)
     {
-        keyArray = @[Emoji_People_kry, Emoji_Objects_kry, Emoji_Nature_kry, Emoji_Places_kry, Emoji_Symbols_kry];
+        keyArray = @[Emoji_People_key, Emoji_Objects_key, Emoji_Nature_key, Emoji_Places_key, Emoji_Symbols_key];
     }
     else
     {
-        keyArray = @[Emoji_People5_kry, Emoji_Objects_kry, Emoji_Nature_kry, Emoji_Places_kry, Emoji_Symbols_kry];
+        keyArray = @[Emoji_People5_key, Emoji_Objects_key, Emoji_Nature_key, Emoji_Places_key, Emoji_Symbols_key];
     }
     
     self.m_EmojiCodeArray = [m_EmojiDic objectForKey:[keyArray objectAtIndex:emojiType]];
